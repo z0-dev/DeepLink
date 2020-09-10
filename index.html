@@ -11,18 +11,12 @@
 <a href=wanted://topic?url=https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=104&oid=437&aid=0000246402>토픽 상세로 이동</a></br>
 <a href=wanted://topic>토픽 리스트로 이동</a> </br>
 </br>
-<h2> 링크 직접 입력 </h2>
-<input type="text" value='딥링크직접입력' id="input"></br>
-<button onclick="input()">이동</button>
-
-
-<script type="text/javascript">
-
-function input(){
-var input = document.getElementById("input").value;
-location.href = input;
-}
-
+<h3> 링크 직접 입력 </h3>
+<form name="딥링크 직접입력" action="값을 보낼 주소" method="post">
+        <input type='url' name='userUrl' required/>
+        <br>
+        <input type='submit' name='이동' />
+    </form>
 
 
  </body>
